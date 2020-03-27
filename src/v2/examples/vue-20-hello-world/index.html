@@ -5,17 +5,26 @@
   <script src="https://unpkg.com/vue"></script>
 </head>
 <body>
-  <div id="app">
-    {{ message }}
+  <div id="app1">
+    {{obj.foo}}
   </div>
-
+  
   <script>
-    var app = new Vue({
-      el: '#app',
+    var obj = {
+      foo: 'bar'
+    };
+    // Object.freeze(obj);
+
+    var app1 = new Vue({
+      el: "#app1",
       data: {
-        message: 'Hello Vue!'
+       obj
       }
     })
+
+    // obj.foo = "changed";
+    app1.obj.foo = "changed";
+     
   </script>
 </body>
 </html>

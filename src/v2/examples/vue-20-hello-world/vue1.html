@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My first Vue app</title>
+  <script src="https://unpkg.com/vue"></script>
+</head>
+<body>
+  <div id="app1">
+    <p>Using mustaches: {{ rawHtml }}</p>
+    <p>Using v-html directive:
+      <h1 v-html="rawHtml"></h1></p>
+      <h1>SALAM _______</h1>
+      {{rawHtml}}
+    </div>
+  </body>
+  
+  <script>
+        
+    var app1 = new Vue({
+      el: "#app1",
+      data: {
+        rawHtml: "<span>This should be red</span>"
+      }
+    });
+    
+    
+  </script>
+</body>
+</html>

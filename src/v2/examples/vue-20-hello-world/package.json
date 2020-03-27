@@ -1,7 +1,7 @@
 {
-  "name": "vue-20-hello-world",
+  "name": "vue-scrimba-tutorial",
   "version": "1.0.0",
-  "description": "The easiest way to try out Vue.js, edit this Hello World example",
+  "description": "This is a short tutorial from Scrimba on fundamentals of Vue.js .",
   "main": "index.html",
   "scripts": {
     "start": "serve"
